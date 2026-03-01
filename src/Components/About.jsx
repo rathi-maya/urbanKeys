@@ -1,18 +1,44 @@
-import React from 'react'
-import AboutImg from '../Assets/AboutPage.jpg'
+import React from "react";
+import AboutImg from "../Assets/About!.jpg";
 function About() {
   return (
     <div>
-        <div className='text-center mt-6'>
-        <h1 className='text-4xl font-bold mb-4'>About <span className='font-normal underline underline-offset-4 decoration-1'>Our Brand</span></h1>
-        <p className='text-gray-500'>We don't just sell Properties</p>
-        <p className='text-gray-500'>We help you find a place to call home</p>
+      <div className="text-center mt-6">
+        <h1 className="text-4xl font-bold mb-4">
+          About{" "}
+          <span className="font-normal underline underline-offset-4 decoration-1">
+            Our Brand
+          </span>
+        </h1>
+        <p className="text-gray-500">We don't just sell Properties</p>
+        <p className="text-gray-500">We help you find a place to call home</p>
+      </div>
+      <section className=" flex m-10 gap-10 md:justify-evenly">
+        <div className="">
+          <img className="w-80 h-120" src={AboutImg} alt="" />
         </div>
-        <div className='mt-6'>
-            <img className='w-75 h-75' src={AboutImg} alt="" />
+        <div className="grid grid-cols-2 gap-10 h-4">
+          <div className="">
+            <h1 className="text-4xl font-semibold">10+</h1>
+            <p>Years of Excellence</p>
+          </div>
+          <div>
+            <h1 className="text-4xl font-semibold">12+</h1>
+            <p>Projects Completed</p>
+          </div>
+           <div>
+            <h1 className="text-4xl font-semibold">20+</h1>
+            <p>Mn. Sq. Ft.Delivered</p>
+          </div>
+           <div>
+            <h1 className="text-4xl font-semibold">25+</h1>
+            <p>ongoing Projects</p>
+          </div>
         </div>
+      </section>
+      
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
