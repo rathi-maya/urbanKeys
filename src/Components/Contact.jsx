@@ -14,7 +14,7 @@ function Contact() {
         </div>
         <div  className='font-semibold'>
         <div className=' flex flex-col gap-4 w-full md:w-1/2 mx-auto mt-8'>
-            <label htmlFor="" >Your Name</label>
+            <label htmlFor="">Your Name</label>
             <input type="text" placeholder='Your Name' className='border border-gray-500 p-2' />
             <label htmlFor="">Your Email</label>
             <input type="email" placeholder='Your Email' className='border border-gray-500 p-2'  />
