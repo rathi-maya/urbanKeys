@@ -15,7 +15,7 @@ function About() {
       </div>
       <section className=" flex  m-10 gap-10 md:justify-evenly">
         <div className="">
-          <img className="w-80 h-120  sm:w-120" src={AboutImg} alt="" />
+          <img className="w-80 h-115  sm:w-120" src={AboutImg} alt="" />
         </div>
         <div className="space-y-8">
           <div className="grid grid-cols-2 gap-10"> 
@@ -40,7 +40,7 @@ function About() {
           </div> 
         </div>
         
-            <p className="max-w-lg  text-gray-600 leading-relaxed mt-4 text-center">
+            <p className="max-w-lg  text-gray-600 leading-relaxed mt-4">
               <span className="font-semibold">Finding the right home</span> is
               one of life’s most important decisions. We’re here to make that
               journey{" "}
@@ -53,7 +53,9 @@ function About() {
               </span>
               .
             </p>
-  
+            <button className="bg-blue-500 px-6 py-3 text-white rounded font-semibold">
+                    <a href="">Learn More</a>         
+            </button>
          </div>
       </section>
     </div>
