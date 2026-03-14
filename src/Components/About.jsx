@@ -2,8 +2,8 @@ import React from "react";
 import AboutImg from "../Assets/About!.jpg";
 function About() {
   return (
-    <div>
-      <div className="text-center mt-6">
+    <div className="mb-20">
+      <div className="text-center mt-12">
         <h1 className="text-4xl font-bold mb-4">
           About{" "}
           <span className="font-normal underline underline-offset-4 decoration-1">
@@ -13,9 +13,9 @@ function About() {
         <p className="text-gray-500">We don't just sell Properties</p>
         <p className="text-gray-500">We help you find a place to call home</p>
       </div>
-      <section className=" flex  m-10 gap-10 md:justify-evenly">
+      <section className="flex flex-col md:flex-row m-10 gap-10 justify-center items-center">
         <div className="">
-          <img className="w-80 h-115  sm:w-120" src={AboutImg} alt="" />
+          <img className="w-full max-w-sm md:max-w-md lg:max-w-lg max-h-[420px] object-contain mx-auto rounded-lg" src={AboutImg} alt="" />
         </div>
         <div className="space-y-8">
           <div className="grid grid-cols-2 gap-10"> 
