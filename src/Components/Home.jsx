@@ -27,7 +27,7 @@ function Home() {
         </button>
 
         <button
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl "
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
@@ -46,7 +46,7 @@ function Home() {
         </div>
       )}
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center -mt-10 text-white px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center -mt-15 md:-mt-10 text-white px-4">
         <h1 className="text-5xl md:text-6xl font-bold max-w-3xl">
           Explore homes that fit your dreams
         </h1>
