@@ -13,30 +13,30 @@ function About() {
         <p className="text-gray-500">We don't just sell Properties</p>
         <p className="text-gray-500">We help you find a place to call home</p>
       </div>
-      <section className="flex flex-col md:flex-row m-10 gap-10 justify-center items-center">
+      <section className="flex flex-col md:flex-row m-10 gap-10 justify-center items-center px-6 md:px-0">
         <div className="">
           <img className="w-full max-w-sm md:max-w-md lg:max-w-lg max-h-[420px] object-contain mx-auto rounded-lg" src={AboutImg} alt="" />
         </div>
-        <div className="space-y-8">
-          <div className="grid grid-cols-2 gap-10"> 
+        <div className="space-y-8  ">
+          <div className="grid grid-cols-2 gap-10 "> 
           <div>
             <h1 className="text-4xl font-semibold">10+</h1>
-            <p>Years of Excellence</p>
+            <p className="text-gray-600">Years of Excellence</p>
           </div>
 
           <div>
             <h1 className="text-4xl font-semibold">12+</h1>
-            <p>Projects Completed</p>
+            <p className="text-gray-600" >Projects Completed</p>
           </div>
 
           <div>
             <h1 className="text-4xl font-semibold">20+</h1>
-            <p>Mn. Sq. Ft.Delivered</p>
+            <p className="text-gray-600 ">Mn. Sq. Ft. Delivered</p>
           </div>
 
           <div>
             <h1 className="text-4xl font-semibold">25+</h1>
-            <p>ongoing Projects</p>
+            <p className="text-gray-600">Ongoing Projects</p>
           </div> 
         </div>
         
