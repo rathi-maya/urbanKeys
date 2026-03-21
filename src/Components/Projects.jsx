@@ -1,56 +1,87 @@
 import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "react-feather";
 import Home1 from "../assets/Properties/House1.jpg";
+import Home2 from "../assets/Properties/House2.jpg";
+import Home3 from "../assets/Properties/House3.jpg";
+import Home4 from "../assets/Properties/House4.jpg";
+import Home5 from "../assets/Properties/House5.jpg";
+import Home6 from "../assets/Properties/House6.jpg";
+import Home7 from "../assets/Properties/House7.jpg";
 import ProjectCard from "./ProjectCard";
 
 const project = [
   {
-    image: Home1,
-    price: "£1,273,279",
-    title: "Detached home in Bournemouth",
-    address: "29 Terrace Rd, BH2 5EL",
-    area: "1634 sqft",
-    beds: "5 bed",
-    baths: "3 bath",
-  },
-  {
-    image: Home1,
-    price: "£950,000",
-    title: "Semi-detached in Manchester",
-    address: "14 Oak Street, M1 2AB",
-    area: "1200 sqft",
-    beds: "4 bed",
-    baths: "2 bath",
-  },
-  {
-    image: Home1,
-    price: "£2,100,000",
-    title: "Luxury Villa in London",
-    address: "8 Kensington Ave, W8 4PT",
-    area: "3200 sqft",
-    beds: "6 bed",
-    baths: "5 bath",
-  },
-  {
-    image: Home1,
+    id: 1,
     price: "£780,000",
     title: "Modern Flat in Bristol",
     address: "3 Harbour View, BS1 5TY",
     area: "900 sqft",
     beds: "3 bed",
     baths: "2 bath",
+    image: Home1
   },
   {
-    image: Home1,
-    price: "£1,450,000",
-    title: "Countryside Cottage in Bath",
-    address: "22 Meadow Lane, BA2 7RQ",
-    area: "2100 sqft",
-    beds: "5 bed",
+    id: 2,
+    price: "£650,000",
+    title: "Luxury Villa in Manchester",
+    address: "12 Green Park, M14 6PL",
+    area: "1200 sqft",
+    beds: "4 bed",
     baths: "3 bath",
+    image: Home2
   },
+  {
+    id: 3,
+    price: "£520,000",
+    title: "Cozy Home in Birmingham",
+    address: "8 Maple Street, B15 2TT",
+    area: "850 sqft",
+    beds: "3 bed",
+    baths: "2 bath",
+    image: Home3
+  },
+  {
+    id: 4,
+    price: "£890,000",
+    title: "Premium House in London",
+    address: "22 Oxford Road, W1D 1BS",
+    area: "1400 sqft",
+    beds: "5 bed",
+    baths: "4 bath",
+    image: Home4
+  },
+  {
+    id: 5,
+    price: "£430,000",
+    title: "Family House in Leeds",
+    address: "5 Rose Avenue, LS1 4AB",
+    area: "780 sqft",
+    beds: "2 bed",
+    baths: "1 bath",
+    image: Home5
+  },
+  {
+    id: 6,
+    price: "£710,000",
+    title: "Elegant Home in Liverpool",
+    address: "10 River View, L3 5RT",
+    area: "1000 sqft",
+    beds: "3 bed",
+    baths: "2 bath",
+    image: Home6
+  },
+  {
+    id: 7,
+    price: "£980,000",
+    title: "Luxury Mansion in Cambridge",
+    address: "1 King Street, CB2 1TN",
+    area: "1800 sqft",
+    beds: "6 bed",
+    baths: "5 bath",
+    image: Home7
+  }
 ];
-
-const Projects1 = () => {
+const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
 
@@ -94,7 +125,7 @@ const Projects1 = () => {
         </p>
       </div>
 
-      {/* Carousel */}
+      {/*  slider*/}
       <div className="relative px-8 md:max-w-5xl sm:max-w-xl mx-auto">
 
         {/* Prev Button */}
@@ -107,7 +138,9 @@ const Projects1 = () => {
               : "border-gray-800 text-gray-800 hover:bg-gray-900 hover:text-white"
             }`}
         >
-         <span className="text-xl font-bold">&lt;</span>
+           <ChevronLeft/>
+
+        
         </button>
 
        
@@ -149,7 +182,7 @@ const Projects1 = () => {
               : "border-gray-800 text-gray-800 hover:bg-gray-900 hover:text-white"
             }`}
         >
-          <span className="text-xl font-bold">&gt;</span>
+         <ChevronRight/>
         </button>
       </div>
 
@@ -169,4 +202,4 @@ const Projects1 = () => {
   );
 };
 
-export default Projects1;
+export default Projects;
