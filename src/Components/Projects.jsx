@@ -13,7 +13,7 @@ const project = [
   {
     id: 1,
     price: "£780,000",
-    title: "Modern Flat in Bristol",
+    title: " Cozy Home in Birmingham",
     address: "3 Harbour View, BS1 5TY",
     area: "900 sqft",
     beds: "3 bed",
@@ -33,7 +33,7 @@ const project = [
   {
     id: 3,
     price: "£520,000",
-    title: "Cozy Home in Birmingham",
+    title: "Modern mansion in Bristol",
     address: "8 Maple Street, B15 2TT",
     area: "850 sqft",
     beds: "3 bed",
@@ -110,17 +110,20 @@ const Projects = () => {
   const translateX = -(currentIndex * (100 / visibleCount));
 
   return (
-    <div>
+    <div className="mb-16">
 
       {/* Intro */}
-      <div className="text-center px-3">
-        <h1 className="text-4xl font-bold mb-4">
+         <div className="text-center mb-16">
+        <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
+         OUR JOURNEY OF SUCCESS 
+        </p>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
           Projects{" "}
-          <span className="font-normal underline underline-offset-4 decoration-1">
+          <span className="font-normal italic underline underline-offset-8 decoration-1 text-gray-700">
             Completed
           </span>
         </h1>
-        <p className="text-gray-500 mb-6">
+        <p className="text-gray-500 text-base sm:text-lg max-w-md mx-auto leading-relaxed">
           Every completed project is a place where families start new memories.
         </p>
       </div>
@@ -132,7 +135,7 @@ const Projects = () => {
         <button
           onClick={prev}
           disabled={currentIndex === 0}
-          className={`absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full border flex items-center justify-center transition-all
+          className={`cursor-pointer absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full border flex items-center justify-center transition-all
             ${currentIndex === 0
               ? "border-gray-200 text-gray-300 cursor-not-allowed"
               : "border-gray-800 text-gray-800 hover:bg-gray-900 hover:text-white"
@@ -176,7 +179,7 @@ const Projects = () => {
         <button
           onClick={next}
           disabled={currentIndex >= maxIndex}
-          className={`absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full border flex items-center justify-center transition-all
+          className={` cursor-pointer absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full border flex items-center justify-center transition-all
             ${currentIndex >= maxIndex
               ? "border-gray-200 text-gray-300 cursor-not-allowed"
               : "border-gray-800 text-gray-800 hover:bg-gray-900 hover:text-white"
