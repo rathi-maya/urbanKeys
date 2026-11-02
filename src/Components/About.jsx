@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../assets/about!.jpg";
+import AboutImg from "../assets/About!.jpg";
 
 
 const stats = [
