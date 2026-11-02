@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import Landing from "../Assets/Landing.jpg";
+import Landing from "../assets/Landing.jpg";
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
