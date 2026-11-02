@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import Landing from "../assets/Landing.jpg";
+import Landing from "../assets/Landing.webP";
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -9,8 +9,12 @@ function Home() {
     <div className="relative h-screen w-full">
       <img
         src={Landing}
-        alt=""
+         alt="Find Your Perfect Home with UrbanKey"
+          loading="eager"
+  fetchPriority="high"
+  decoding="async"
         className="absolute w-full h-full object-cover"
+        
       />
       <div className="absolute w-full h-full bg-black/50  "></div>
       <nav className="relative z-10 flex justify-between items-center px-10 py-6 text-white">
