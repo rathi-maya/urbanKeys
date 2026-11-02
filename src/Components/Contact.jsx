@@ -1,4 +1,3 @@
-import { section } from 'framer-motion/client';
 import {React, useState} from 'react'
 
 function Contact() {
