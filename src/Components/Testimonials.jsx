@@ -27,7 +27,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-   <section>
+   <section id="testimonials">
        <div className="text-center mt-12 mb-16">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
           WHAT OUR CLIENTS FEEL ❤️

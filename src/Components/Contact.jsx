@@ -1,3 +1,4 @@
+import { section } from 'framer-motion/client';
 import {React, useState} from 'react'
 
 function Contact() {
@@ -17,6 +18,7 @@ function Contact() {
   }
 
   return (
+     <section id="contact">
     <div className='max-w-6xl mx-auto px-6 mt-16 '>
          <div className="text-center mb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
@@ -57,6 +59,7 @@ function Contact() {
         </div>
         </div>
     </div>
+     </section>
   )
 }
 

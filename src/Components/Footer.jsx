@@ -40,7 +40,7 @@ function Footer() {
               placeholder="Enter your email"
               className="flex-1 px-4 py-2 rounded-md bg-slate-800 text-gray-200 outline-none"
             />
-            <button className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-500 transition">
+            <button className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
               Subscribe
             </button>
           </div>

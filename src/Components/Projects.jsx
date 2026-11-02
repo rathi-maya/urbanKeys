@@ -110,9 +110,10 @@ const Projects = () => {
   const translateX = -(currentIndex * (100 / visibleCount));
 
   return (
+    <section id="projects">
     <div className="mb-16">
 
-      {/* Intro */}
+      
          <div className="text-center mb-16">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
          OUR JOURNEY OF SUCCESS 
@@ -202,6 +203,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

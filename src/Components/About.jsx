@@ -1,5 +1,6 @@
 import React from "react";
-import AboutImg from "../Assets/About!.jpg";
+import AboutImg from "../assets/about!.jpg";
+
 
 const stats = [
   { value: "10+", label: "Years of Excellence" },
@@ -10,7 +11,7 @@ const stats = [
 
 function About() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-16">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
           Who We Are
@@ -31,7 +32,7 @@ function About() {
           <img
             src={AboutImg}
             alt="About our brand"
-            className="w-full h-90 sm:h-100 object-cover rounded-2xl shadow-2xl"
+            className="w-full h-90 sm:h-110 object-cover rounded-2xl shadow-2xl"
           />
 
           <div className="absolute -bottom-5 -right-3 sm:-right-5 bg-blue-500 text-white px-5 py-4 rounded-2xl shadow-xl text-center min-w-22.5">
