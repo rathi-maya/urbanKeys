@@ -88,9 +88,9 @@ const Projects = () => {
   
   useEffect(() => {
     const updateCount = () => {
-      if (window.innerWidth >= 1024) setVisibleCount(3);      // lg
-      else if (window.innerWidth >= 768) setVisibleCount(2);  // md
-      else setVisibleCount(1);                                 // sm
+      if (window.innerWidth >= 1024) setVisibleCount(3);    
+      else if (window.innerWidth >= 768) setVisibleCount(2);  
+      else setVisibleCount(1);                                 
     };
     updateCount();
     window.addEventListener("resize", updateCount);
@@ -127,10 +127,9 @@ const Projects = () => {
         </p>
       </div>
 
-      {/*  slider*/}
+   
       <div className="relative px-8 md:max-w-5xl sm:max-w-xl mx-auto">
 
-        {/* Prev Button */}
         <button
           onClick={prev}
           disabled={currentIndex === 0}
@@ -148,7 +147,7 @@ const Projects = () => {
        
         <div className="overflow-hidden mx-6">
 
-          {/* Track — slides left/right via translateX */}
+        
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(${translateX}%)` }}
@@ -174,7 +173,7 @@ const Projects = () => {
 
         </div>
 
-        {/* Next Button */}
+    
         <button
           onClick={next}
           disabled={currentIndex >= maxIndex}
@@ -188,7 +187,7 @@ const Projects = () => {
         </button>
       </div>
 
-      {/* Dot slider */}
+    
       <div className="flex justify-center gap-2 mt-4">
         {Array.from({ length: maxIndex + 1 }).map((_, i) => (
           <button
