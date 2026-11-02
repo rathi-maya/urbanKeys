@@ -97,7 +97,7 @@ const Projects = () => {
     return () => window.removeEventListener("resize", updateCount);
   }, []);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  //eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setCurrentIndex(0);
   }, [visibleCount]);
@@ -110,10 +110,8 @@ const Projects = () => {
   const translateX = -(currentIndex * (100 / visibleCount));
 
   return (
-    <section id="projects">
-    <div className="mb-16">
-
-      
+    <section id="projects" className="py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="mb-0">
          <div className="text-center mb-16">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
          OUR JOURNEY OF SUCCESS 

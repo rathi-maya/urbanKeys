@@ -12,7 +12,7 @@ const stats = [
 function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
+      <div className="text-center mb-8">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
           Who We Are
         </p>
@@ -74,7 +74,7 @@ function About() {
           </p>
 
           <a
-            href="#"
+            href="#projects"
             className="inline-flex items-center gap-2 self-start bg-blue-500 hover:bg-blue-500 active:bg-blue-800 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl text-sm sm:text-base"
           >
             Learn More

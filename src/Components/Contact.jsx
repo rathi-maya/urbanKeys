@@ -17,7 +17,7 @@ function Contact() {
   }
 
   return (
-     <section id="contact">
+     <section id="contact" className=" py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <div className='max-w-6xl mx-auto px-6 mt-16 '>
          <div className="text-center mb-12">
         <p className="text-xs font-semibold tracking-widest uppercase text-blue-500 mb-3">
